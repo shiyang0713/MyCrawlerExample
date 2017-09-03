@@ -25,7 +25,7 @@ public class BasicExample {
 		//移除所有div顯示文章內容
 		Elements elem =CrawlerPack.start().addCookie("over18","1").getFromHtml(uri)
 						   .select("#main-content");
-				elem.select("div").remove();
+				elem.select("div").remove();//remove() -> void
 
 
 
